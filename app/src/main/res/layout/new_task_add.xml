@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            
+            <EditText
+                android:id="@+id/id_new_Edit_Task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:hint="New task to be added here right now "
+                android:paddingBottom="8dp"
+                android:paddingHorizontal="10dp"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <EditText
+                android:id="@+id/id_new_Edit_disecription_task"
+                android:layout_below="@id/id_new_Edit_Task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:paddingHorizontal="10dp"
+                android:hint="this is the derscription task"
+                android:textSize="16dp"/>
+
+
+            <com.skydoves.elasticviews.ElasticButton
+                android:id="@+id/id_new_task_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_new_Edit_disecription_task"
+                android:text="SAVE"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:layout_alignParentEnd="true"
+                android:background="#0003DAC5"
+                android:textColor="#A9A9A9"
+                />
+
+            
+        </RelativeLayout>
+        
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
